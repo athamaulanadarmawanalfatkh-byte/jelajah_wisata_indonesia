@@ -1,0 +1,514 @@
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jelajah Wisata Indonesia</title>
+
+    <style>
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: white;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+
+
+
+        .header {
+            width: 600px;
+            height: 58px;
+
+            background-color: #00FEFE;
+
+            text-align: center;
+
+            padding-top: 13px;
+        }
+
+        .header h1 {
+            font-family: "Times New Roman", serif;
+            font-size: 17px;
+            font-weight: bold;
+
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+
+
+        .menu {
+            width: 600px;
+            height: 11px;
+
+            background-color: #F3ECD9;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .menu a {
+            width: 33.33%;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            color: #333;
+
+            font-size: 7px;
+        }
+
+
+
+        .beranda {
+            width: 600px;
+
+            min-height: 90px;
+
+            text-align: center;
+
+            padding-top: 17px;
+
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .beranda h2 {
+            font-family: "Times New Roman", serif;
+
+            font-size: 13px;
+
+            margin-bottom: 12px;
+        }
+
+        .beranda p {
+            width: 510px;
+
+            margin: 0 auto 7px;
+
+            font-size: 7px;
+
+            line-height: 1.7;
+        }
+
+
+        .wisata {
+            width: 600px;
+
+            padding-top: 17px;
+            padding-bottom: 18px;
+
+            text-align: center;
+
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .wisata h2 {
+            font-family: "Times New Roman", serif;
+
+            font-size: 13px;
+
+            margin-bottom: 7px;
+        }
+
+        .keterangan {
+            font-size: 7px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .wisata-list {
+            width: 570px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 12px;
+        }
+
+        .wisata-item {
+            width: 182px;
+
+            text-align: center;
+        }
+
+
+
+        .wisata-item img {
+            width: 182px;
+            height: 126px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+
+        .wisata-item h3 {
+            font-family: "Times New Roman", serif;
+
+            font-size: 8px;
+
+            margin-top: 7px;
+            margin-bottom: 6px;
+        }
+
+
+
+        .wisata-item p {
+            font-size: 6.5px;
+
+            line-height: 1.5;
+        }
+
+
+
+        .musik {
+            width: 600px;
+
+            text-align: center;
+
+            padding-top: 16px;
+            padding-bottom: 17px;
+
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .musik h2 {
+            font-family: "Times New Roman", serif;
+
+            font-size: 13px;
+
+            margin-bottom: 8px;
+        }
+
+        .musik p {
+            font-size: 7px;
+
+            margin-bottom: 9px;
+        }
+
+        .musik audio {
+            width: 175px;
+            height: 30px;
+        }
+
+
+        .galeri {
+            width: 600px;
+
+            text-align: center;
+
+            padding-top: 16px;
+            padding-bottom: 17px;
+
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .galeri h2 {
+            font-family: "Times New Roman", serif;
+
+            font-size: 13px;
+
+            margin-bottom: 8px;
+        }
+
+        .galeri p {
+            font-size: 7px;
+
+            margin-bottom: 10px;
+        }
+
+        .galeri video {
+            width: 195px;
+            height: 110px;
+
+            display: block;
+
+            margin: 0 auto;
+
+            background-color: black;
+        }
+
+
+    
+
+        footer {
+            width: 600px;
+
+            text-align: center;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            font-size: 6.5px;
+        }
+
+
+
+        @media screen and (max-width: 620px) {
+
+            .container,
+            .header,
+            .menu,
+            .beranda,
+            .wisata,
+            .musik,
+            .galeri,
+            footer {
+                width: 100%;
+            }
+
+            .wisata-list {
+                width: 95%;
+            }
+
+            .wisata-item {
+                width: 32%;
+            }
+
+            .wisata-item img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1.45 / 1;
+            }
+
+            .beranda p {
+                width: 85%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <header class="header">
+
+        <h1>
+            JELAJAH WISATA INDONESIA
+        </h1>
+
+        <p>
+            Temukan Keindahan Alam dan Budaya Indonesia
+        </p>
+
+    </header>
+
+
+
+
+    <nav class="menu">
+
+        <a href="#beranda">
+            Beranda
+        </a>
+
+        <a href="#wisata">
+            Wisata
+        </a>
+
+        <a href="#galeri">
+            Galeri
+        </a>
+
+    </nav>
+
+
+    <section id="beranda" class="beranda">
+
+        <h2>
+            🏠 Beranda
+        </h2>
+
+        <p>
+            Selamat datang di website Jelajah Wisata Indonesia.
+            Website ini berisi informasi mengenai beberapa tempat wisata
+            menarik yang ada di Indonesia.
+        </p>
+
+        <p>
+            Indonesia memiliki banyak sekali destinasi wisata,
+            mulai dari pegunungan, pantai, laut, hingga wisata budaya.
+        </p>
+
+    </section>
+
+
+    
+
+    <section id="wisata" class="wisata">
+
+        <h2>
+            🌍 Destinasi Wisata
+        </h2>
+
+        <p class="keterangan">
+            Berikut adalah objek wisata menarik di Jawa Timur
+        </p>
+
+
+        <div class="wisata-list">
+
+
+            <div class="wisata-item">
+
+                <img
+                    src="bromo.jpg"
+                    alt="Gunung Bromo"
+                >
+                <h3>
+                    Gunung Bromo
+                </h3>
+
+                <p>
+                    Gunung Bromo merupakan salah satu tempat wisata
+                    terkenal yang berada di Jawa Timur.
+                </p>
+
+            </div>
+
+
+            <div class="wisata-item">
+
+                <img
+                    src="kawah-ijen.jpg"
+                    alt="Kawah Ijen"
+                >
+
+                <h3>
+                    Kawah Ijen
+                </h3>
+
+                <p>
+                    Kawah Ijen merupakan salah satu tempat wisata
+                    terkenal yang berada di Jawa Timur.
+                </p>
+
+            </div>
+
+
+    
+
+            <div class="wisata-item">
+
+                <img
+                    src="air-terjun.jpg"
+                    alt="Air Terjun Coban Rondo"
+                >
+
+                <h3>
+                    Air Terjun Coban Rondo
+                </h3>
+
+                <p>
+                    Air Terjun Coban Rondo merupakan salah satu tempat
+                    wisata terkenal yang berada di Jawa Timur.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="musik">
+
+        <h2>
+            🎵 Musik Nusantara
+        </h2>
+
+        <p>
+            Silakan dengarkan musik sambil menikmati informasi wisata Indonesia.
+        </p>
+
+
+        <audio controls>
+
+            <source
+                src="musik.mp3" 
+                type="audio/mpeg"
+            >
+
+            Browser tidak mendukung audio.
+
+        </audio>
+
+    </section>
+
+
+
+    <section id="galeri" class="galeri">
+
+        <h2>
+            🎥 Wonderful Indonesia
+        </h2>
+
+        <p>
+            Silakan melihat video terkait informasi wisata Indonesia.
+        </p>
+
+
+        <video controls>
+
+            <source
+                src=" wisata.mp4"
+                type="video/mp4"
+            >
+
+            Browser tidak mendukung video.
+
+        </video>
+
+    </section>
+
+
+
+    <footer>
+
+        Created Person By Atha Maulana Darmawan Al-fatkh
+        
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
